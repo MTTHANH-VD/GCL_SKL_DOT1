@@ -272,3 +272,47 @@ section#giaithuong h2 {
     font-size: 32px; /* Tùy chỉnh kích thước chữ cho mobile nếu cần */
   }
 }
+/*--------------------------------------------------------------------*/
+/* Modal cơ bản */
+ .modal {
+      display: none; /* ✅ Ẩn mặc định */
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      width: 400px;
+      text-align: left;
+      border-radius: 8px;
+    }
+    .modal button {
+      margin-top: 10px;
+      
+    }
+     .modal-content button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .modal-content button:hover {
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      transform: scale(1.05);
+    }
+
+    .modal-content button:active {
+      transform: scale(0.97);
+    }
+    

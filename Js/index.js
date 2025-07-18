@@ -102,3 +102,25 @@ const music = document.getElementById('background-music');
   menuToggle.addEventListener('click', () => {
     menu.classList.toggle('show');
   });
+
+  /*------------------------------------------------------------------------*/
+
+const showModalLink = document.getElementById('showModalLink');
+  const modal = document.getElementById('myModal');
+  const closeModal = document.getElementById('closeModal');
+
+  showModalLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.style.display = 'flex'; // ✅ chỉ hiện khi click
+  });
+
+  closeModal.addEventListener('click', function() {
+    modal.style.display = 'none'; // ẩn lại
+  });
+
+  // Ẩn modal nếu click ra ngoài
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
